@@ -219,7 +219,7 @@ final class FFTTApi
         return $this->retrieveClubDetailsOperation->retrieveClubDetailsByEquipe($equipe);
     }
 
-    public function retrieveRencontreDetailsByLien(string $lienRencontre, string $clubEquipeA = '', string $clubEquipeB = ''): RencontreDetails
+    public function retrieveRencontreDetailsByLien(string $lienRencontre, ?string $clubEquipeA = null, ?string $clubEquipeB = null): RencontreDetails
     {
         return $this->retrieveRencontreDetailsOperation->retrieveRencontreDetailsByLien($lienRencontre, $clubEquipeA, $clubEquipeB);
     }
